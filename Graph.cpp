@@ -269,10 +269,14 @@ R"(
     g.addEdge(1, 3);
     g.bfs(0, [](int i, std::map<int, std::vector<int>> edges) { std::cout << i << " "; });
     std::cout << std::endl;
+
     g.removeEdge(0, 2);
+    std::cout << "After removing edge 0-2" << std::endl;
     g.bfs(0, [](int i, std::map<int, std::vector<int>>& edges) { std::cout << i << " "; });
     std::cout << std::endl;
+
     g.removeVertex(1);
+    std::cout << "After removing vertex 1" << std::endl;
     g.bfs(0, [](int i, std::map<int, std::vector<int>>& edges) { std::cout << i << " "; });
     std::cout << std::endl;
 
@@ -286,11 +290,12 @@ R"(
     std::cout << std::endl;
 
     g2.removeEdge(0, 2);
-
+    std::cout << "After removing edge 0-2" << std::endl;
     g2.dfs(0, [](int i, std::map<int, std::vector<int>>& edges) { std::cout << i << " "; });
     std::cout << std::endl;
-    g2.removeVertex(1);
 
+    g2.removeVertex(1);
+    std::cout << "After removing vertex 1" << std::endl;
     g2.dfs(0, [](int i, std::map<int, std::vector<int>>& edges) { std::cout << i << " "; });
     std::cout << std::endl;
 

@@ -6,7 +6,35 @@ A simple modern C++ code for DFS and BFS in graphs.
     c++ -std=c++17 Graph.cpp -o graph
     #+END_SRC
 
-** Run
+** Run:
     #+BEGIN_SRC sh
     ./graph
     #+END_SRC
+
+** Output:
+
+#+BEGIN_EXAMPLE sh
+========== The Graph =========
+
+           0
+          / \
+         /   \
+        /     2
+       1
+        \
+         \
+          3
+
+============= BFS ============
+0 1 2 3
+After removing edge 0-2
+0 1 3
+After removing vertex 1
+0
+============= DFS ============
+0 1 3 2
+After removing edge 0-2
+0 1 3
+After removing vertex 1
+0
+#+END_EXAMPLE
