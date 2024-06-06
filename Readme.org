@@ -1,0 +1,12 @@
+* Code:
+A simple modern C++ code for DFS and BFS in graphs.
+
+** Compile:
+    #+BEGIN_SRC sh
+    c++ -std=c++17 Graph.cpp -o graph
+    #+END_SRC
+
+** Run
+    #+BEGIN_SRC sh
+    ./graph
+    #+END_SRC
